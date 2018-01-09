@@ -1,0 +1,61 @@
+/*
+
+sdx v2017.1_op (64-bit) [Major: 2017, Minor: 1]
+SW Build 1933108 on Jul 14 2017 12:04:55
+
+
+Process ID: 10249
+License: Customer
+
+Current time: 	1/6/18 6:34:12 PM UTC
+Time zone: 	Coordinated Universal Time (UTC)
+
+OS: CentOS Linux release 7.4.1708 (Core)
+OS Version: 3.10.0-693.5.2.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :1
+Screen size: 1920x1200
+Screen resolution (DPI): 179
+Available screens: 1
+Available disk space: 5 GB
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/opt/Xilinx/SDx/2017.1.op/SDK/tps/lnx64/jre
+JVM executable location: 	/opt/Xilinx/SDx/2017.1.op/SDK/tps/lnx64/jre/bin/java
+Java library paths: /opt/Xilinx/SDx/2017.1.op/SDK/tps/lnx64/jre/lib/amd64/server:/opt/Xilinx/SDx/2017.1.op/SDK/tps/lnx64/jre/lib/amd64:/opt/Xilinx/SDx/2017.1.op/SDK/tps/lnx64/lib/amd64:/opt/Xilinx/SDx/2017.1.op/SDK/lib/lnx64.o:/opt/Xilinx/SDx/2017.1.op/SDK/tps/lnx64/jre/lib/amd64:/opt/Xilinx/SDx/2017.1.op/SDK/tps/lnx64/jre/lib/amd64/server:/opt/Xilinx/SDx/2017.1.op/lib/lnx64.o:/opt/Xilinx/SDx/2017.1.op/runtime/lib/x86_64/lib:/opt/Xilinx/SDx/2017.1.op/runtime/lib/x86_64::/opt/Xilinx/SDx/2017.1.op/SDK/lnx64/tools/dot/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+
+User name: 	centos
+User home directory: /home/centos
+User working directory: /home/centos/src/project_data/aws-fpga/SDAccel/examples/xilinx/getting_started/host/helloworld_ocl/GUI_test/hello/accel
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/SDx/2017.1.op
+HDI_APPROOT: /opt/Xilinx/SDx/2017.1.op/SDK
+RDI_DATADIR: /opt/Xilinx/SDx/2017.1.op/SDK/data
+RDI_BINDIR: /opt/Xilinx/SDx/2017.1.op/SDK/bin
+Engine tmp dir: 	./.Xil/sdx-10249-ip-172-31-34-223.ec2.internal
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+bot.toolbarDropDownButtonWithTooltip("Run hello-Default").click();
+bot.button("OK").click();
+bot.styledText().pressShortcut(SWT.SHIFT);
+bot.toolbarButtonWithTooltip("Configure Annotation Preferences").click();
+bot.table().getTableItem("Bookmarks").select();
+bot.tree().getTreeItem("hello").select();
+bot.tree().getTreeItem("hello").select();
+Widget not supported: Tree.pressShortcut(SWT.SHIFT);
+bot.contextMenu("Properties").click();
+bot.tree().getTreeItem("C/C++ Build").expand();
+bot.tree().getTreeItem("C/C++ Build").select();
+bot.tree().getTreeItem("C/C++ Build").getNode("Build Variables").select();
+bot.tree().getTreeItem("C/C++ Build").getNode("Environment").select();
+bot.tree().getTreeItem("C/C++ Build").getNode("Logging").select();
+bot.tree().getTreeItem("C/C++ Build").getNode("Tool Chain Editor").select();
+bot.tree().getTreeItem("C/C++ Build").getNode("Settings").select();

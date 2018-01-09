@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="hello" location="/home/centos/src/project_data/aws-fpga/SDAccel/examples/xilinx/getting_started/host/helloworld_ocl/GUI_test/hello" platform="xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0" sysConfig="linux_x86" cpu="" os="linux" deviceCount="10">
+  <configuration name="Emulation-CPU" id="com.xilinx.sdx.opencl.config.sw_emu.738434148">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1">
+        <kernels name="vector_add" sourceFile="vector_addition.cl"/>
+        <kernels name="vector_sub" sourceFile="vector_subtraction.cl"/>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1">
+        <kernels name="vector_add" sourceFile="vector_addition.cl"/>
+        <kernels name="vector_sub" sourceFile="vector_subtraction.cl"/>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.sdx.opencl.config.hw_emu.987167113">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <kernels name="vector_add" sourceFile="vector_addition.cl"/>
+        <kernels name="vector_sub" sourceFile="vector_subtraction.cl"/>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <kernels name="vector_add" sourceFile="vector_addition.cl"/>
+        <kernels name="vector_sub" sourceFile="vector_subtraction.cl"/>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="System" id="com.xilinx.sdx.opencl.config.hw.2005025313">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
+      <binaryContainers name="binary_container_1">
+        <kernels name="vector_add" sourceFile="vector_addition.cl"/>
+        <kernels name="vector_sub" sourceFile="vector_subtraction.cl"/>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
+      <binaryContainers name="binary_container_1">
+        <kernels name="vector_add" sourceFile="vector_addition.cl"/>
+        <kernels name="vector_sub" sourceFile="vector_subtraction.cl"/>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+</openclProject:OpenCLProject>
